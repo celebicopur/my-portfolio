@@ -221,6 +221,18 @@ a {
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.hamburger:hover {
+    color: var(--primary);
+}
+
 /* 
 ==============================================
    HERO SECTION
@@ -909,9 +921,38 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 1001;
+    }
+
     .nav-links {
-        display: none;
-        /* In a real app, we'd add a hamburger menu */
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 350px;
+        height: 100vh;
+        background-color: rgba(2, 6, 23, 0.98);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(255, 255, 255, 0.05);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.25rem;
     }
 
     .hero h1 {
