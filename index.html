@@ -4,154 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammet Celebi Copur | Computer Engineering</title>
+    <title>Muhammet Celebi Copur | Environmental Engineering</title>
     <meta name="description"
-        content="Personal portfolio of Muhammet Celebi Copur, a computer engineering student with a focus on healthcare technology.">
+        content="Personal portfolio of Muhammet Celebi Copur, an environmental engineering student at ITU blending tech with green solutions.">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo"><i class="fa-solid fa-laptop-medical"
-                    style="color: var(--accent); margin-right: 8px;"></i>Muhammet</a>
-            <div class="hamburger" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#vision">Future Vision</a></li>
-            </ul>
+    <!-- Boot Screen -->
+    <div id="boot-screen" class="boot-screen">
+        <div class="terminal">
+            <p class="line1">> Initializing Eco-OS v2.0...</p>
+            <p class="line2">> Loading Environmental Sensors...</p>
+            <p class="line3">> Welcome, System Architect Muhammet.</p>
+            <p class="line4 blink">_</p>
         </div>
-    </nav>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-container">
-            <div class="hero-content fade-in">
-                <div class="badge">Computer Engineering Student</div>
-                <h1 class="hero-title">
-                    Hi, I'm<br>
-                    <span class="text-outline">Muhammet</span>
-                </h1>
-                <p class="subtitle">Building the future of healthcare technology with discipline and clear vision.</p>
-                <div class="hero-buttons">
-                    <a href="#about" class="btn btn-primary">Discover My Journey</a>
-                    <a href="https://www.linkedin.com/in/muhammetcelebicopur" target="_blank"
-                        class="btn btn-secondary"><i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i>
-                        LinkedIn</a>
-                    <a href="https://github.com/celebicopur" target="_blank" class="btn btn-secondary"><i
-                            class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub</a>
+    <!-- Eco OS Desktop -->
+    <div id="eco-os-desktop" class="os-desktop hidden">
+        
+        <!-- Interactive Core Background -->
+        <div class="interactive-core">
+            <div class="radar">
+                <div class="sweep"></div>
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+            </div>
+        </div>
+
+        <!-- Home Window -->
+        <div class="os-window active-window" id="home-window">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-solid fa-terminal"></i> system_status.sh</span>
+                <div class="window-controls">
+                    <span class="ctrl-btn min"></span>
+                    <span class="ctrl-btn max"></span>
+                    <span class="ctrl-btn close"></span>
                 </div>
             </div>
-            <div class="hero-image fade-in delay-1">
-                <div class="image-wrapper">
-                    <img src="profile-pic.jpeg" alt="Muhammet Celebi Copur">
+            <div class="window-content hero-content-window">
+                <div class="hero-text-area">
+                    <div class="badge">Environmental Engineering Student</div>
+                    <h1 class="hero-title">
+                        Hi, I'm<br>
+                        <span class="text-outline">Muhammet</span>
+                    </h1>
+                    <p class="subtitle">Building a sustainable future by merging software with environmental engineering.</p>
+                    <div class="hero-buttons">
+                        <a href="https://www.linkedin.com/in/muhammetcelebicopur" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-linkedin" style="margin-right: 8px;"></i> LinkedIn</a>
+                        <a href="https://github.com/celebicopur" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-image-area">
+                    <div class="image-wrapper">
+                        <img src="profile-pic.jpeg" alt="Muhammet Celebi Copur">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <p>Scroll down</p>
-        </div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="floating-icon icon-1"><i class="fa-solid fa-code"></i></div>
-            <div class="floating-icon icon-2"><i class="fa-solid fa-heart-pulse"></i></div>
-            <div class="floating-icon icon-3"><i class="fa-solid fa-microchip"></i></div>
-            <div class="floating-icon icon-4"><i class="fa-solid fa-laptop-code"></i></div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Who Am I?</h2>
-                <div class="header-line"></div>
+        <!-- About Window -->
+        <div class="os-window" id="about-window" style="display: none;">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-regular fa-user"></i> profile_data.json</span>
+                <div class="window-controls">
+                    <span class="ctrl-btn min"></span>
+                    <span class="ctrl-btn max"></span>
+                    <span class="ctrl-btn close"></span>
+                </div>
             </div>
-
-            <div class="about-grid">
-                <div class="about-card fade-in delay-1">
+            <div class="window-content grid-content">
+                <div class="about-card">
                     <i class="fa-regular fa-user icon"></i>
                     <h3>Personal Info</h3>
-                    <p>I am <strong>20 years old</strong>, originally from <strong>Gaziantep</strong>, and currently
-                        living in the vibrant city of <strong>Istanbul</strong>.</p>
+                    <p>I am <strong>20 years old</strong>, originally from <strong>Gaziantep</strong>, and currently living in the vibrant city of <strong>Istanbul</strong>.</p>
                 </div>
-
-                <div class="about-card fade-in delay-2">
+                <div class="about-card">
                     <i class="fa-solid fa-graduation-cap icon"></i>
                     <h3>Education</h3>
-                    <p>Studying Computer Engineering at <strong>Acıbadem University</strong>. Currently in English prep
-                        school, preparing for my department next year.</p>
+                    <p>1st-year Environmental Engineering student at <strong>Istanbul Technical University (İTÜ)</strong>. Successfully completed my English prep year at Acıbadem University before transferring.</p>
                 </div>
-
-                <div class="about-card fade-in delay-3">
+                <div class="about-card">
                     <i class="fa-regular fa-compass icon"></i>
                     <h3>Personality</h3>
-                    <p>I am a <strong>regular, disciplined, and clear</strong> person. I value order and straightforward
-                        communication in everything I do.</p>
+                    <p>I am a <strong>regular, disciplined, and clear</strong> person. I value order and straightforward communication in everything I do.</p>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Skills & Traits Section -->
-    <section id="skills" class="skills section-padding">
-        <div class="container">
-            <div class="section-header text-center fade-in">
-                <h2>Strengths & Soft Skills</h2>
-                <div class="header-line center"></div>
-                <p class="section-desc">My technical journey is just beginning, but my foundational human skills are
-                    strong.</p>
+        <!-- Skills Window -->
+        <div class="os-window" id="skills-window" style="display: none;">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-solid fa-code"></i> skills_matrix.xml</span>
+                <div class="window-controls">
+                    <span class="ctrl-btn min"></span>
+                    <span class="ctrl-btn max"></span>
+                    <span class="ctrl-btn close"></span>
+                </div>
             </div>
-
-            <div class="skills-wrapper">
-                <div class="skill-item fade-in">
+            <div class="window-content grid-content-2">
+                <div class="skill-item">
                     <div class="skill-icon"><i class="fa-solid fa-users"></i></div>
                     <div class="skill-info">
                         <h4>Team Activity</h4>
                         <p>I thrive in collaborative environments and work excellently within a team.</p>
                     </div>
                 </div>
-
-                <div class="skill-item fade-in">
+                <div class="skill-item">
                     <div class="skill-icon"><i class="fa-solid fa-bullseye"></i></div>
                     <div class="skill-info">
                         <h4>Discipline</h4>
                         <p>A strong sense of self-management and regularity in my daily routines.</p>
                     </div>
                 </div>
-
-                <div class="skill-item fade-in">
+                <div class="skill-item">
                     <div class="skill-icon"><i class="fa-solid fa-briefcase"></i></div>
                     <div class="skill-info">
                         <h4>Management</h4>
                         <p>I can easily manage and guide other people, providing clear direction and structure.</p>
                     </div>
                 </div>
-
-                <div class="skill-item fade-in">
+                <div class="skill-item">
                     <div class="skill-icon"><i class="fa-regular fa-circle-check"></i></div>
                     <div class="skill-info">
                         <h4>Clarity</h4>
@@ -160,99 +140,73 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Activities Section -->
-    <section id="activities" class="activities section-padding">
-        <div class="container">
-            <div class="section-header text-center fade-in">
-                <h2>Activities & Hackathons</h2>
-                <div class="header-line center"></div>
-                <p class="section-desc">Actively participating, learning, and collaborating in the tech ecosystem.</p>
+        <!-- Activities Window -->
+        <div class="os-window" id="activities-window" style="display: none;">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-solid fa-trophy"></i> event_logs.log</span>
+                <div class="window-controls">
+                    <span class="ctrl-btn min"></span>
+                    <span class="ctrl-btn max"></span>
+                    <span class="ctrl-btn close"></span>
+                </div>
             </div>
-
-            <div class="activities-grid">
-                <div class="activity-card fade-in delay-1">
-                    <div class="activity-image">
-                        <img src="hackathon-2.jpeg" alt="Hackathon Event">
-                    </div>
+            <div class="window-content activities-content">
+                <div class="activity-card">
+                    <div class="activity-image"><img src="hackathon-2.jpeg" alt="Hackathon Event"></div>
                     <div class="activity-content">
-                        <h3>Acıbadem HealthTech Hackathon</h3>
-                        <p>Participated in an exciting hackathon at Acıbadem University, focusing on innovative
-                            healthcare technology solutions.</p>
+                        <h3>Software & Tech Hackathons</h3>
+                        <p>Participated in exciting hackathons (including at Acıbadem University), developing my coding and teamwork skills.</p>
                     </div>
                 </div>
-
-                <div class="activity-card fade-in delay-2">
-                    <div class="activity-image">
-                        <img src="hackathon-1.jpeg" alt="Hackathon Team">
-                    </div>
+                <div class="activity-card">
+                    <div class="activity-image"><img src="hackathon-1.jpeg" alt="Hackathon Team"></div>
                     <div class="activity-content">
                         <h3>Innovating with the Team</h3>
-                        <p>Collaborated with an awesome team to brainstorm and develop systems that merge engineering
-                            with human health.</p>
+                        <p>Collaborated with awesome teams to brainstorm and develop systems that merge engineering with real-world problems.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Future Vision Section -->
-    <section id="vision" class="vision section-padding">
-        <div class="vision-bg"></div>
-        <div class="container relative">
-            <div class="vision-content fade-in">
+        <!-- Vision Window -->
+        <div class="os-window" id="vision-window" style="display: none;">
+            <div class="window-header">
+                <span class="window-title"><i class="fa-solid fa-seedling"></i> future_directives.sh</span>
+                <div class="window-controls">
+                    <span class="ctrl-btn min"></span>
+                    <span class="ctrl-btn max"></span>
+                    <span class="ctrl-btn close"></span>
+                </div>
+            </div>
+            <div class="window-content vision-content">
                 <div class="vision-text">
                     <h2>Future Goals & Vision</h2>
-                    <div class="header-line"></div>
-                    <p class="vision-lead">Merging engineering with human health.</p>
-                    <p>In the future, I want to focus my career on <strong>Healthcare Technology</strong>. The
-                        intersection of software and medical science is where true life-changing innovations happen.</p>
-                    <p>My goal is to bring my discipline and team-management skills to institutions like
-                        <strong>Acıbadem Hospitals</strong>, developing systems that improve patient care and hospital
-                        management.</p>
+                    <p class="vision-lead">Merging software with environmental engineering.</p>
+                    <p>In the future, I want to focus my career on <strong>Green Technology (EcoTech)</strong>. The intersection of software development and environmental science is where true sustainable innovations happen.</p>
+                    <p>My goal is to bring my discipline and team-management skills to develop systems that improve sustainability, smart cities, and green infrastructure.</p>
                 </div>
                 <div class="vision-dashboard">
-                    <div class="dashboard-card card-1 fade-in">
-                        <i class="fa-solid fa-brain dashboard-icon"></i>
-                        <div class="dashboard-info">
-                            <h4>AI Diagnostics</h4>
-                        </div>
-                    </div>
-                    <div class="dashboard-card card-2 fade-in delay-1">
-                        <i class="fa-solid fa-heart-pulse dashboard-icon"></i>
-                        <div class="dashboard-info">
-                            <h4>HealthTech Core</h4>
-                        </div>
-                    </div>
-                    <div class="dashboard-card card-3 fade-in delay-2">
-                        <i class="fa-solid fa-network-wired dashboard-icon"></i>
-                        <div class="dashboard-info">
-                            <h4>Hospital Systems</h4>
-                        </div>
-                    </div>
+                    <div class="dashboard-card card-1"><i class="fa-solid fa-seedling dashboard-icon"></i><div class="dashboard-info"><h4>Smart Sustainability</h4></div></div>
+                    <div class="dashboard-card card-2"><i class="fa-solid fa-solar-panel dashboard-icon"></i><div class="dashboard-info"><h4>GreenTech Core</h4></div></div>
+                    <div class="dashboard-card card-3"><i class="fa-solid fa-recycle dashboard-icon"></i><div class="dashboard-info"><h4>Eco Systems</h4></div></div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-logo"><i class="fa-solid fa-laptop-medical"
-                    style="color: var(--accent); margin-right: 8px;"></i>Muhammet</div>
-            <p>Designed with discipline and clarity.</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/muhammetcelebicopur" target="_blank" title="LinkedIn"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/celebicopur" target="_blank" title="GitHub"><i
-                        class="fa-brands fa-github"></i></a>
+        <!-- Taskbar / Dock -->
+        <div class="taskbar">
+            <div class="taskbar-start"><i class="fa-solid fa-leaf"></i> Eco-OS</div>
+            <div class="taskbar-icons">
+                <div class="task-icon active" data-target="home-window" title="Home / Status"><i class="fa-solid fa-terminal"></i></div>
+                <div class="task-icon" data-target="about-window" title="Profile"><i class="fa-regular fa-user"></i></div>
+                <div class="task-icon" data-target="skills-window" title="Skills"><i class="fa-solid fa-code"></i></div>
+                <div class="task-icon" data-target="activities-window" title="Event Logs"><i class="fa-solid fa-trophy"></i></div>
+                <div class="task-icon" data-target="vision-window" title="Directives"><i class="fa-solid fa-seedling"></i></div>
             </div>
+            <div class="taskbar-time" id="os-clock">12:00</div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Muhammet Celebi Copur. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
 
     <!-- Custom Script -->
     <script src="script.js"></script>
